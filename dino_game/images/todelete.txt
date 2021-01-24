@@ -1,0 +1,2 @@
+file created to create a dir, since i'm not using git for this small project.
+It will be deleted after the real files are added
