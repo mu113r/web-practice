@@ -1,0 +1,144 @@
+<DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Johann Muller Portifolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+        
+        <!-- google fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" type="text/css" href="css/portifolio.css">
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="index.html#goal" class="nav__link">Career Goal</a></li>
+                    <li class="nav__item"><a href="index.html#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="index.html#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="index.html#awards" class="nav__link">Awards</a></li>
+                    <li class="nav__item"><a href="index.html#experience" class="nav__link">Experience</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">Hi, I am <strong>Johann Muller</strong></h1>
+            <p class="section__subtitle section__subtitle--intro">Embedded Firmware Dev.</p>
+            <img src="images/perfil2.jpeg" alt="a picture of Johann Muller" class="intro__img" />
+        </section>
+        
+        <!-- Career Goal -->
+        <section class="career-goal" id="goal">
+            <h2 class="section__title section__title--career-goal">My Goal</h2>
+            <p>My Career and life goal is to become reference in Embedded Firmware Development. It is my desire to dominate knowledge of all aspects of embedded software development, including hardware. I wish to be able to build and test any kind of microcontroller or embedded hardware/firmware.</p>
+        </section>
+        
+        <!-- Projects -->
+        <section class="my_projects" id="projects">
+            <h2 class="section__title section__title--projects">Projects</h2>
+            <div class="projects">
+                <div class="project">
+                    <h3>Arduino</h3>
+                    <ul>
+                        <li><a href="https://www.udemy.com/course/arduino-iniciante/?referralCode=209A9324ED553EE2068C" title="This is a Course on Udemy in Portuguese-BR (my native language) to teach the basics of arduino. I've used this to make a review for myself and at the same time improve my skill of talking in front of a camera and a litle of video editing as well" target="_blank">Intructor Udemy Course</a></li>
+                        <li><a href="wheel.html" title="Using a piece of wood, a wheel and a rotary encoder connected to an arduino to calculate the distance run by the wheel. Testing it in 250m known distance got me 248m, but the speed was influencing the experiment, since the rotary enconder wasn't well filtered and to fast or to slow would alter the result of measuring. This porject was developed in a period of 1 month in 2016.">Measuring Wheel</a></li>
+                        <li><a href="car2.html" title="This Project wasn't really to follow line, but to stay in the track between 2 lines. Using PID algorithm and 5 infra-red sensors to control speed and direction. This project was again 1 month long and it wasn't working great by the end of the time. Problems with battery weight and gearbox were very limiting to achieve the desired outcome.">Following Line Car</a></li>
+                        <li><a href="car1.html" title="This project was to build a car and control dc motors and servo-motor to be able to make 3 different drawings. Again battery weight and gearbox were limiting to achieve desired outcome.">Drawing Car</a></li>
+                    </ul>
+                    
+                </div> <!-- /project -->
+                
+                <div class="project">
+                    <h3>Raspberry Pi</h3>
+                    <ul>
+                        <li><a href="automation.html" title="In this project a few LED's were represinting several functions in  a house such as lights, curtains, gardem watering system, TV etc. A controller using OpenGl library was used to send over wi-fi commands to turn on or off the devices. There were buttons as well to activate the devices and if they were activated by buttons the controller on the raspiberry would show that information">House automation System</a></li>
+                        <li><a href="boxes.html" title="Using multiplexers and infra-red sensors We created a box (64 boxes total) to detect and show info about mice movement inside the box. OpenGl library was used to create a  user interface where the user could choose the number of boxes being worked, set for how long would the experiment last and at the end export data to a csv file">Mice Movement Sensing Box</a></li>
+                        <li><a href="ddr.html" title="This was a group project where we had to develop a structure, hardware and software to recreate the game 'dance dance revolution'. It should show and lit the current steps and next steps while playing music. On the software part we developed in C, using threads and showing the steps on terminal screen using txt files with 'drawings' of arrows. On Hardware part we used a wood box with push buttons and foam to activate the buttons when stepped into it. Circuit wise was kind of simple, controlling separated powersource using transistors and LEDs. 1.5 month to do it and the project worked very well. 2017">Dance Dance Revolution</a></li>
+                    </ul>
+                    
+                </div> <!-- /project -->
+                
+                <div class="project">
+                    <h3>ARM Cortex</h3>
+                    <ul>
+                        <li><a href="capstone.html" title="Project to use nRF52832 Development Kit to read a signal and update its availability over BLE (Bluetooth Low Energy) connection using custom service and adding DFU (Device Firmware Update) service to be able to update firmware without cable connection. Capstone Project.">Nordic nRF52832 BLE signal</a></li>
+                        <li><a href="msp432.html" title="This was just a piece of a bigger project and I just had to develop firmware using C to read analog signal from sensors and transmit that information over wi-fi. I was able to stablish connection, but before a I could transmit any information I was moved to another project">TI MSP432</a></li>
+                        <li><a href="tiva.html" title="Evaluation Board used to control 4x(7segment display) and a DC motor. This project we were able to set the RPM using 2 push buttons and 2 7 segment display and watch in the other 2x 7 segment display the readings of RPM from motor. 2018">TI TM4C123GH6PM</a></li>
+                    </ul>
+                    
+                </div> <!-- /project -->
+            </div>
+        </section>
+        
+        <!-- Education -->
+        <section class="education" id="education">
+            <h2 class="section__title section__title--education">Education</h2>
+            <p class="educ"><strong>University of Rhode Island</strong></p>
+            <p class="educ">B.S. in Computer Engineering</p>
+            <p class="educ">May 2021</p>
+        </section>
+        
+        <!-- Awards -->
+        <section class="awards" id="awards">
+            <h2 class="section__title section__title--awards">Awards</h2>
+            <p class="aw">M B Kingsbury Scholarship</p>
+            <p class="aw"><a href="https://uri.meritpages.com/stories/Johann-Karl-Muller-of-Kingston-named-to-the-University-of-Rhode-Island-Fall-2020-Dean-s-List-/50376240" target="_blank">Dean's List Fall 2020</a></p>
+            <p class="aw"><a href="https://uri.meritpages.com/stories/Johann-Karl-Muller-of-Kingston-named-to-the-University-of-Rhode-Island-Spring-2020-Dean-s-List-/32803818" target="_blank">Dean's List Spring 2020</a></p>
+            <p class="aw"><a href="https://uri.meritpages.com/stories/Johann-Karl-Muller-of-Kingston-named-to-The-University-of-Rhode-Island-Dean-s-List-/24040066" target="_blank">Dean's List Fall 2019</a></p>
+        </section>
+        
+        <!-- Highlighted Courses
+        <section class="courses" id="courses">
+            <h2 class="section__title section__title--courses">Courses</h2>
+            <p></p>
+        </section>
+        -->
+        
+        <!-- Publications 
+        <section class="publications" id="publications">
+            <h2 class="section__title section__title--publications">Publications</h2>
+        </section>
+        -->
+        
+        <!-- Experience -->
+        <section class="experience" id="experience">
+            <h2 class="section__title section__title--experience">Experience</h2>
+            <p class="exp"><strong>Wearable Firmware Engineer</strong></p>
+            <p class="exp">Circadian Positioning Systems</p>
+            <p class="exp">12/15/2020 - 01/25/2021</p>
+            <br>
+            <p class="exp"><strong>Teacher Assistant</strong></p>
+            <p class="exp">Computer Science Department at URI</p>
+            <p class="exp">CSC 212 - Data Structures</p>
+            <p class="exp">09/14/2020 - 12/14/2020</p>
+        </section>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:jk.muller@yahoo.com" class="footer__link">jk.muller@yahoo.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a href="https://www.linkedin.com/in/johann-muller/" class="social-list__link" target="_blank"><i class="fab fa-linkedin"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://github.com/mu113r" class="social-list__link" target="_blank"><i class="fab fa-github"></i></a>
+                </li>
+                <li class="social-list__item">
+                    <a href="https://twitter.com/jkmuller01" class="social-list__link" target="_blank"><i class="fab fa-twitter"></i></a>
+                </li>
+            </ul>
+        </footer>
+        <script src="js/portifolio.js"></script>
+    </body>
+</html>
